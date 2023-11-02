@@ -1,11 +1,12 @@
 package com.example.contactslist.controller;
 
-import com.example.contactslist.entity.Contacts;
+import com.example.contactslist.service.InDSService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
+@Slf4j
 @Controller
 @RequiredArgsConstructor
 public class Master {
@@ -16,7 +17,7 @@ public class Master {
      удаление delete()
     */
 
-    //private final ContactsService service;
+    private final InDSService service;
 
     @GetMapping("/")
     public String mainPage() {
