@@ -17,7 +17,6 @@ public class ContactsRepository implements InDBRepository {
 
     private final JdbcTemplate template;
 
-
     @Override
     public List<Contacts> getAll() {
 
