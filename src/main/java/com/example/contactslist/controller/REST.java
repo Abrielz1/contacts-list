@@ -5,11 +5,18 @@ import com.example.contactslist.service.ContactsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController("/")
 @RequiredArgsConstructor
 public class REST {
 
     private final ContactsService service;
+
+    @GetMapping
+    public List<Contacts> getAll() {
+        return service.getAll();
+    }
 
     @GetMapping("contacts/{id}")
     public Contacts getContactById(@PathVariable Long id) {
