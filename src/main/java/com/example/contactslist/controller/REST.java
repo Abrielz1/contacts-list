@@ -26,4 +26,9 @@ public class REST {
     public Contacts updateContact(@RequestBody Contacts contacts) {
         return service.editContact(contacts);
     }
+
+    @DeleteMapping("contacts/delete/{id}")
+    public void deleteContactById(@PathVariable Long id) {
+        service.deleteContactById(id);
+    }
 }
