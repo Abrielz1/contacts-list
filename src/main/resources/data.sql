@@ -1,0 +1,10 @@
+insert into contacts (id, first_name, last_name, email, phone) values (1, 'Ursula', 'Jeschner', 'ujeschner0@amazon.de', '+86 (201) 386-9727');
+insert into contacts (id, first_name, last_name, email, phone) values (2, 'Pauly', 'Tulip', 'ptulip1@microsoft.com', '+52 (481) 123-0214');
+insert into contacts (id, first_name, last_name, email, phone) values (3, 'Quinlan', 'Dailly', 'qdailly2@unblog.fr', '+86 (972) 302-2263');
+insert into contacts (id, first_name, last_name, email, phone) values (4, 'Robbi', 'Stolte', 'rstolte3@vk.com', '+86 (932) 238-6782');
+insert into contacts (id, first_name, last_name, email, phone) values (5, 'Katya', 'Castille', 'kcastille4@ucsd.edu', '+351 (137) 260-2726');
+insert into contacts (id, first_name, last_name, email, phone) values (6, 'Concettina', 'Jefford', 'cjefford5@barnesandnoble.com', '+81 (251) 855-5144');
+insert into contacts (id, first_name, last_name, email, phone) values (7, 'Timothee', 'Ovitts', 'tovitts6@seattletimes.com', '+1 (144) 603-5120');
+insert into contacts (id, first_name, last_name, email, phone) values (8, 'Arnie', 'Ropking', 'aropking7@yandex.ru', '+386 (213) 143-1137');
+insert into contacts (id, first_name, last_name, email, phone) values (9, 'Starlin', 'Fendley', 'sfendley8@bravesites.com', '+46 (728) 919-6670');
+insert into contacts (id, first_name, last_name, email, phone) values (10, 'Theodora', 'Pirdy', 'tpirdy9@vk.com', '+351 (248) 307-6714');
