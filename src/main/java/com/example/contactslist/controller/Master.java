@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.constraints.Positive;
 
 @Slf4j
@@ -17,10 +16,6 @@ import javax.validation.constraints.Positive;
 @Validated
 @RequiredArgsConstructor
 public class Master {
-    /*
-
-     удаление delete()
-    */
 
     private final InDBService service;
 
