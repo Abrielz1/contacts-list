@@ -9,3 +9,6 @@ services:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=contacts
+    volumes:
+      - /schema.sql:docker-entrypoint-initdb.d/schema.sql
+      - /data.sql:docker-entrypoint-initdb.d/data.sql
