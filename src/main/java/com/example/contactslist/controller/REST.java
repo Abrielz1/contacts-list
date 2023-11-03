@@ -13,7 +13,6 @@ public class REST {
 
     @GetMapping("contacts/{id}")
     public Contacts getContactById(@PathVariable Long id) {
-        System.out.println("service " + service.findById(id));
        return service.findById(id);
     }
 
