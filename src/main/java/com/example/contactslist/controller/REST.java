@@ -13,7 +13,8 @@ import javax.validation.constraints.Positive;
 import java.util.List;
 
 @Validated
-@RestController("/")
+@RestController
+@RequestMapping("/rest/")
 @RequiredArgsConstructor
 public class REST {
 

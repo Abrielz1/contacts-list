@@ -4,6 +4,7 @@ import com.example.contactslist.entity.Contacts;
 import com.example.contactslist.service.InDBService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Primary;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,6 +14,7 @@ import javax.validation.constraints.Positive;
 
 @Slf4j
 @Controller
+@Primary
 @Validated
 @RequiredArgsConstructor
 public class Master {
