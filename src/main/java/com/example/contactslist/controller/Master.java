@@ -5,7 +5,6 @@ import com.example.contactslist.service.InDBService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Primary;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
@@ -36,7 +35,6 @@ public class Master {
     }
 
     @PostMapping("/contacts/create")
-    @ResponseStatus(HttpStatus.CREATED)
     public String createContact(@ModelAttribute Contacts contact) {
 
         service.createContact(contact);
@@ -56,7 +54,6 @@ public class Master {
     }
 
     @PostMapping("/contacts/edit")
-    @ResponseStatus(HttpStatus.OK)
     public String editContact(@ModelAttribute Contacts contact) {
 
         service.editContact(contact);
@@ -64,7 +61,6 @@ public class Master {
     }
 
     @GetMapping("/contacts/delete/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
     public String deleteContact(@Positive @PathVariable Long id) {
 
         service.deleteContactById(id);
